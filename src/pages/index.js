@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component, Fragment, StrictMode } from "react";
 
 export default class HomePage extends Component {
   constructor(props) {
@@ -7,7 +7,11 @@ export default class HomePage extends Component {
   }
 
   render() {
-    return <Fragment>Welcome electron</Fragment>;
+    return (
+      <StrictMode>
+        <Fragment>Welcome electron</Fragment>
+      </StrictMode>
+    );
   }
 }
 
