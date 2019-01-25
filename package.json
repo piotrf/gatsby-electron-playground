@@ -33,10 +33,10 @@
   "homepage": "./",
   "main": "src/electron-starter.js",
   "scripts": {
-    "start": "nf start -p 8000",
+    "start": "./node_modules/gatsby-cli/lib/index.js develop",
     "build": "./node_modules/gatsby-cli/lib/index.js build",
     "electron": "electron .",
-    "dev": "./node_modules/gatsby-cli/lib/index.js develop",
+    "dev": "nf dev -p 8010",
     "release-mac": "./node_modules/gatsby-cli/lib/index.js build && ./node_modules/electron-packager/cli.js . --overwrite --platform=darwin --arch=x64 --prune=true --out=dist"
   }
 }
